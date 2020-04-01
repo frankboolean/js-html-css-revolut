@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1000px){}
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.right{
+display: flex;
+justify-content: space-between;
+}
+
+.right a,ul{
+  margin: 40px;
+  text-decoration: none;
+}
+
+.left a{
+  margin: 20px;
+}
+
+.right li{
+  list-style-type: none;
+  margin: 5px;
+}
+
+.hamburger-menu{
+  display: none;
+  position: absolute;
+}
+
+@media screen and (max-width: 650px){
+.hamburger-menu{
+  display: block;
+}
+
+.nav{
+  display: none;
+}
+
+}
