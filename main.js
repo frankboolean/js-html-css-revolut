@@ -2,13 +2,21 @@
 $(document).ready(function(){
 
   $("a").click(function(){
-    $("ul").children("ul").slideToggle();
-  }
-  )
+    $(this).siblings("ul").toggle();
+
+  })
 
 
-
-
+  $(".fa-bars").click(
+   function(){
+     $(".hamburger-menu").show();
+   }
+ )
+ $(".fa-bars").click(
+   function(){
+     $(".hamburger-menu").hide();
+   }
+ )
 
 
 })
