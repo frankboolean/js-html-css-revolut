@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+section h1{
+font-size: 50px;
+}
+
+img{
+  width: 480px;
+  float: right;
+}
 @media screen and (min-width: 1000px){}
 .nav{
   display: flex;
@@ -22,6 +30,9 @@ justify-content: space-between;
 
 .left a{
   margin: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
 }
 
 .right li{
@@ -38,6 +49,10 @@ justify-content: space-between;
   list-style-type: none;
 }
 
+.hamburger-menu ul {
+  text-decoration: none;
+}
+
 
 
 @media screen and (max-width: 650px){
@@ -51,9 +66,16 @@ justify-content: space-between;
 
 }
 
+section{
+  display: none;
+}
 
 .nav{
   display: none;
+}
+
+.hamburger-menu ul {
+  text-decoration: none;
 }
 
 }
